@@ -3,20 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SAK BINDASS Private Limited</title>
+    <title>Veerabhadra | Sak Bindass Pvt Ltd</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { background: #000; color: #fff; font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; overflow: hidden; }
-        .container { text-align: center; border: 2px solid #333; padding: 50px; border-radius: 20px; box-shadow: 0 0 20px rgba(255,255,255,0.1); }
-        h1 { font-size: 3rem; letter-spacing: 5px; margin-bottom: 10px; color: #00ff00; }
-        p { font-size: 1.2rem; color: #888; }
-        .tagline { font-style: italic; color: #fff; margin-top: 20px; }
-    </style>
+        body { background-color: #050505; color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        .hero-gradient { background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(5,5,5,1) 100%); }
+        .cinematic-card { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1); transition: 0.3s; }
+        .cinematic-card:hover { border-color: #ff4500; transform: translateY(-5px); }
+        .accent-glow { color: #ff4500; text-shadow: 0 0 15px rgba(255, 69, 0, 0.6); }
+    </script>
 </head>
 <body>
-    <div class="container">
-        <h1>SAK BINDASS PVT LTD</h1>
-        <p>सम्राट का साम्राज्य - जल्द ही लाइव होगा</p>
-        <div class="tagline">"इट्स सम्राट द ग्रेट, बेबी!"</div>
-    </div>
+
+    <section class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+        <img src="veerabhadra-hero.jpg" alt="Veerabhadra Hero" class="absolute inset-0 w-full h-full object-cover opacity-60">
+        <div class="absolute inset-0 hero-gradient"></div>
+        
+        <div class="relative z-10 text-center px-4">
+            <h1 class="text-6xl md:text-8xl font-black tracking-tighter accent-glow mb-4">VEERABHADRA</h1>
+            <p class="text-xl md:text-2xl font-light tracking-widest uppercase">The God of Destruction</p>
+            <div class="mt-8">
+                <a href="#contact" class="px-8 py-3 bg-orange-600 hover:bg-orange-700 text-white font-bold rounded-full transition">INITIATE ALIGNMENT</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-6 max-w-7xl mx-auto">
+        <h2 class="text-4xl font-bold mb-12 border-l-4 border-orange-600 pl-4">PROJECT OVERVIEW</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="cinematic-card p-8 rounded-xl">
+                <h3 class="text-xl font-bold mb-4 text-orange-500">Core Tech</h3>
+                <p class="text-gray-400">Powered by Unreal Engine 5.5. Real-time cinematic rendering with local RTX 6000 Ada nodes.</p>
+            </div>
+            <div class="cinematic-card p-8 rounded-xl">
+                <h3 class="text-xl font-bold mb-4 text-orange-500">Visual Scale</h3>
+                <p class="text-gray-400">Mythological storytelling meets hyper-realistic AI generation. 8K texture fidelity.</p>
+            </div>
+            <div class="cinematic-card p-8 rounded-xl">
+                <h3 class="text-xl font-bold mb-4 text-orange-500">Global Launch</h3>
+                <p class="text-gray-400">Targeting a worldwide release with zero-compromise production quality.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-zinc-950 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold mb-12 text-right border-r-4 border-orange-600 pr-4 uppercase">Cinematic Vistas</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <img src="ruins-1.jpg" class="w-full h-64 object-cover rounded-lg hover:opacity-80 transition cursor-pointer" alt="Ancient Ruins">
+                <img src="ruins-2.jpg" class="w-full h-64 object-cover rounded-lg hover:opacity-80 transition cursor-pointer" alt="Fiery Sanctum">
+                <img src="ruins-3.jpg" class="w-full h-64 object-cover rounded-lg hover:opacity-80 transition cursor-pointer" alt="Cosmic Ember">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 px-6 max-w-4xl mx-auto">
+        <div class="cinematic-card p-10 rounded-2xl border-orange-900/30">
+            <h2 class="text-3xl font-bold mb-2 uppercase">MD's Office</h2>
+            <p class="text-gray-500 mb-8">Official communication channel for Sak Bindass Pvt Ltd.</p>
+            
+            <form action="#" class="space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <input type="text" placeholder="Full Name" class="bg-zinc-900 border border-zinc-800 p-4 rounded-lg focus:outline-none focus:border-orange-600">
+                    <input type="email" placeholder="Email Address" class="bg-zinc-900 border border-zinc-800 p-4 rounded-lg focus:outline-none focus:border-orange-600">
+                </div>
+                <textarea placeholder="Your Message" rows="5" class="w-full bg-zinc-900 border border-zinc-800 p-4 rounded-lg focus:outline-none focus:border-orange-600"></textarea>
+                <button class="w-full py-4 bg-white text-black font-black uppercase tracking-tighter hover:bg-orange-600 hover:text-white transition">Send Dispatch</button>
+            </form>
+
+            <div class="mt-12 pt-8 border-t border-zinc-800 flex flex-col md:flex-row justify-between text-sm text-gray-500">
+                <div>
+                    <p class="font-bold text-white uppercase">Sak Bindass Pvt Ltd</p>
+                    <p>Strategic Communication: <strong>md@sakbindass.tech</strong></p>
+                    <p>General Enquiries: <strong>info@sakbindass.tech</strong></p>
+                </div>
+                <div class="mt-4 md:mt-0">
+                    <p>© 2026 Samrat The Great. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body>
 </html>

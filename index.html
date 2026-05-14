@@ -3,86 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Veerabhadra | Sak Bindass Pvt Ltd</title>
+    <title>Sak Bindass Pvt Ltd | Official Site</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { background-color: #050505; color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-        .hero-gradient { background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(5,5,5,1) 100%); }
-        .cinematic-card { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1); transition: 0.3s; }
-        .cinematic-card:hover { border-color: #ff4500; transform: translateY(-5px); }
-        .accent-glow { color: #ff4500; text-shadow: 0 0 15px rgba(255, 69, 0, 0.6); }
-    </script>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap');
+        body { background-color: #050505; color: #e0e0e0; font-family: 'Inter', sans-serif; scroll-behavior: smooth; margin: 0; }
+        .hero-section {
+            background: linear-gradient(to bottom, rgba(0,0,0,0.3), #050505), url('hero.png');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .glow { text-shadow: 0 0 30px rgba(255, 69, 0, 1); }
+        .portfolio-card { transition: all 0.4s ease; border: 1px solid #1a1a1a; overflow: hidden; border-radius: 12px; background: #0a0a0a; }
+        .portfolio-card:hover { transform: translateY(-10px); border-color: #ff4500; box-shadow: 0 10px 30px rgba(255, 69, 0, 0.2); }
+        .yt-btn { background: #ff0000; color: white; transition: 0.3s; padding: 12px 32px; border-radius: 9999px; font-weight: 900; }
+        .yt-btn:hover { background: #cc0000; transform: scale(1.05); }
+        .section-title { font-size: 2.5rem; font-weight: 900; text-transform: uppercase; letter-spacing: -0.05em; margin-bottom: 2rem; border-left: 8px solid #ff4500; padding-left: 1.5rem; }
+    </style>
 </head>
 <body>
 
-    <section class="relative h-screen w-full flex items-center justify-center overflow-hidden">
-        <img src="veerabhadra-hero.jpg" alt="Veerabhadra Hero" class="absolute inset-0 w-full h-full object-cover opacity-60">
-        <div class="absolute inset-0 hero-gradient"></div>
-        
-        <div class="relative z-10 text-center px-4">
-            <h1 class="text-6xl md:text-8xl font-black tracking-tighter accent-glow mb-4">VEERABHADRA</h1>
-            <p class="text-xl md:text-2xl font-light tracking-widest uppercase">The God of Destruction</p>
-            <div class="mt-8">
-                <a href="#contact" class="px-8 py-3 bg-orange-600 hover:bg-orange-700 text-white font-bold rounded-full transition">INITIATE ALIGNMENT</a>
+    <!-- HERO SECTION -->
+    <header class="hero-section text-center px-6">
+        <h1 class="text-7xl md:text-9xl font-black glow text-white tracking-tighter uppercase">VEERABHADRA</h1>
+        <p class="text-xl md:text-2xl mt-4 tracking-[0.5em] font-light uppercase opacity-70">The God of Destruction</p>
+        <div class="mt-12 flex gap-4">
+            <a href="#portfolio" class="px-8 py-3 bg-white text-black font-bold tracking-widest hover:bg-orange-600 hover:text-white transition uppercase">Portfolio</a>
+            <a href="https://www.youtube.com/@sakbindass9194/videos" target="_blank" class="yt-btn tracking-widest uppercase">YouTube</a>
+        </div>
+    </header>
+
+    <!-- AAA GAME SECTION (GAM prefix files) -->
+    <section id="game" class="py-24 px-6 max-w-7xl mx-auto border-t border-zinc-900">
+        <h2 class="section-title">AAA Game Development</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+                <p class="text-2xl text-zinc-400 font-light leading-relaxed mb-6">
+                    Sak Bindass Pvt Ltd bharat ke sabse bade 'Mythological Thriller' par kaam kar raha hai. Unreal Engine 5.5 ki taqat se hum <span class="text-white font-bold">Veerabhadra</span> ko ek global AAA anubhav bana rahe hain.
+                </p>
+                <p class="text-orange-500 font-bold uppercase tracking-widest">[ Status: Work in Progress ]</p>
             </div>
+            <div class="portfolio-card">
+                <img src="gamees.png" alt="Game Preview" class="w-full h-auto object-cover">
+            </div>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
+            <img src="gammmd.png" class="portfolio-card w-full h-48 object-cover">
+            <img src="gamee.png" class="portfolio-card w-full h-48 object-cover">
+            <img src="game.png" class="portfolio-card w-full h-48 object-cover">
+            <img src="gameV.png" class="portfolio-card w-full h-48 object-cover">
         </div>
     </section>
 
-    <section class="py-20 px-6 max-w-7xl mx-auto">
-        <h2 class="text-4xl font-bold mb-12 border-l-4 border-orange-600 pl-4">PROJECT OVERVIEW</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="cinematic-card p-8 rounded-xl">
-                <h3 class="text-xl font-bold mb-4 text-orange-500">Core Tech</h3>
-                <p class="text-gray-400">Powered by Unreal Engine 5.5. Real-time cinematic rendering with local RTX 6000 Ada nodes.</p>
-            </div>
-            <div class="cinematic-card p-8 rounded-xl">
-                <h3 class="text-xl font-bold mb-4 text-orange-500">Visual Scale</h3>
-                <p class="text-gray-400">Mythological storytelling meets hyper-realistic AI generation. 8K texture fidelity.</p>
-            </div>
-            <div class="cinematic-card p-8 rounded-xl">
-                <h3 class="text-xl font-bold mb-4 text-orange-500">Global Launch</h3>
-                <p class="text-gray-400">Targeting a worldwide release with zero-compromise production quality.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-20 bg-zinc-950 px-6">
+    <!-- CINEMATIC PORTFOLIO (Hero & Comfy files) -->
+    <section id="portfolio" class="py-24 bg-zinc-950 px-6">
         <div class="max-w-7xl mx-auto">
-            <h2 class="text-4xl font-bold mb-12 text-right border-r-4 border-orange-600 pr-4 uppercase">Cinematic Vistas</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                <img src="ruins-1.jpg" class="w-full h-64 object-cover rounded-lg hover:opacity-80 transition cursor-pointer" alt="Ancient Ruins">
-                <img src="ruins-2.jpg" class="w-full h-64 object-cover rounded-lg hover:opacity-80 transition cursor-pointer" alt="Fiery Sanctum">
-                <img src="ruins-3.jpg" class="w-full h-64 object-cover rounded-lg hover:opacity-80 transition cursor-pointer" alt="Cosmic Ember">
+            <h2 class="section-title text-white">Cinematic Showcase</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="portfolio-card"><img src="hero as.png" class="w-full h-80 object-cover"></div>
+                <div class="portfolio-card"><img src="ComfyUI_00001_.png" class="w-full h-80 object-cover"></div>
+                <div class="portfolio-card"><img src="ComfyUI_00002_.png" class="w-full h-80 object-cover"></div>
+                <div class="portfolio-card"><img src="ComfyUI_00003_.png" class="w-full h-80 object-cover"></div>
+                <div class="portfolio-card"><img src="ComfyUI_00007_.png" class="w-full h-80 object-cover"></div>
+                <div class="portfolio-card"><img src="gamddd.png" class="w-full h-80 object-cover"></div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="py-20 px-6 max-w-4xl mx-auto">
-        <div class="cinematic-card p-10 rounded-2xl border-orange-900/30">
-            <h2 class="text-3xl font-bold mb-2 uppercase">MD's Office</h2>
-            <p class="text-gray-500 mb-8">Official communication channel for Sak Bindass Pvt Ltd.</p>
+    <!-- CONTACT & MD OFFICE -->
+    <section id="contact" class="py-24 bg-black px-6">
+        <div class="max-w-4xl mx-auto bg-zinc-900/30 p-12 rounded-[40px] border border-zinc-800 text-center">
+            <h3 class="text-4xl font-black mb-8 uppercase tracking-tighter">MD's OFFICE</h3>
             
-            <form action="#" class="space-y-6">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <input type="text" placeholder="Full Name" class="bg-zinc-900 border border-zinc-800 p-4 rounded-lg focus:outline-none focus:border-orange-600">
-                    <input type="email" placeholder="Email Address" class="bg-zinc-900 border border-zinc-800 p-4 rounded-lg focus:outline-none focus:border-orange-600">
-                </div>
-                <textarea placeholder="Your Message" rows="5" class="w-full bg-zinc-900 border border-zinc-800 p-4 rounded-lg focus:outline-none focus:border-orange-600"></textarea>
-                <button class="w-full py-4 bg-white text-black font-black uppercase tracking-tighter hover:bg-orange-600 hover:text-white transition">Send Dispatch</button>
-            </form>
-
-            <div class="mt-12 pt-8 border-t border-zinc-800 flex flex-col md:flex-row justify-between text-sm text-gray-500">
+            <div class="flex flex-col md:flex-row justify-around gap-12 mb-12 text-left">
                 <div>
-                    <p class="font-bold text-white uppercase">Sak Bindass Pvt Ltd</p>
-                    <p>Strategic Communication: <strong>md@sakbindass.tech</strong></p>
-                    <p>General Enquiries: <strong>info@sakbindass.tech</strong></p>
+                    <h4 class="text-orange-600 font-bold uppercase text-xs tracking-widest mb-2">Corporate ID</h4>
+                    <p class="text-2xl font-light">md@sakbindass.tech</p>
                 </div>
-                <div class="mt-4 md:mt-0">
-                    <p>© 2026 Samrat The Great. All Rights Reserved.</p>
+                <div>
+                    <h4 class="text-orange-600 font-bold uppercase text-xs tracking-widest mb-2">Operations</h4>
+                    <p class="text-2xl font-light">info@sakbindass.tech</p>
                 </div>
             </div>
+
+            <div class="border-t border-zinc-800 pt-10">
+                <p class="mb-6 text-zinc-500 uppercase tracking-widest text-sm font-bold">Official Production Channel</p>
+                <a href="https://www.youtube.com/@sakbindass9194/videos" target="_blank" class="yt-btn px-12 py-4 inline-block text-xl">SUBSCRIBE TO SAK BINDASS</a>
+            </div>
+            
+            <p class="mt-12 text-zinc-700 italic text-sm">"It’s Samrat The Great, Baby!"</p>
         </div>
     </section>
+
+    <footer class="py-10 text-center text-zinc-800 text-xs uppercase tracking-widest">
+        © 2026 Sak Bindass Pvt Ltd. Global Cinematic Standards.
+    </footer>
 
 </body>
 </html>

@@ -3,105 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sak Bindass Pvt Ltd | Official Site</title>
+    <title>Sak Bindass Pvt Ltd | AAA Game & Cinematic Studio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap');
-        body { background-color: #050505; color: #e0e0e0; font-family: 'Inter', sans-serif; scroll-behavior: smooth; margin: 0; }
-        .hero-section {
-            background: linear-gradient(to bottom, rgba(0,0,0,0.3), #050505), url('hero.png');
-            background-size: cover;
-            background-position: center;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .glow { text-shadow: 0 0 30px rgba(255, 69, 0, 1); }
-        .portfolio-card { transition: all 0.4s ease; border: 1px solid #1a1a1a; overflow: hidden; border-radius: 12px; background: #0a0a0a; }
-        .portfolio-card:hover { transform: translateY(-10px); border-color: #ff4500; box-shadow: 0 10px 30px rgba(255, 69, 0, 0.2); }
-        .yt-btn { background: #ff0000; color: white; transition: 0.3s; padding: 12px 32px; border-radius: 9999px; font-weight: 900; }
-        .yt-btn:hover { background: #cc0000; transform: scale(1.05); }
-        .section-title { font-size: 2.5rem; font-weight: 900; text-transform: uppercase; letter-spacing: -0.05em; margin-bottom: 2rem; border-left: 8px solid #ff4500; padding-left: 1.5rem; }
+        body { background-color: #030303; color: #e5e5e5; font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        /* Hero Section with Parallax Feel */
+        .hero-bg { background: linear-gradient(to bottom, rgba(0,0,0,0.5), #030303), url('hero.png'); background-size: cover; background-position: center; background-attachment: fixed; height: 100vh; }
+        .glow-text { text-shadow: 0 0 40px rgba(255, 69, 0, 1); }
+        .glow-box { box-shadow: 0 0 20px rgba(255, 69, 0, 0.1); }
+        .card { background: #0a0a0a; border: 1px solid #1f1f1f; transition: all 0.4s ease; border-radius: 12px; }
+        .card:hover { border-color: #ff4500; transform: translateY(-8px); box-shadow: 0 10px 30px rgba(255, 69, 0, 0.15); }
+        .section-title { font-size: 2.5rem; font-weight: 900; text-transform: uppercase; letter-spacing: 0.1em; border-left: 6px solid #ff4500; padding-left: 1rem; margin-bottom: 2rem; color: #ffffff; }
     </style>
 </head>
 <body>
 
-    <!-- HERO SECTION -->
-    <header class="hero-section text-center px-6">
-        <h1 class="text-7xl md:text-9xl font-black glow text-white tracking-tighter uppercase">VEERABHADRA</h1>
-        <p class="text-xl md:text-2xl mt-4 tracking-[0.5em] font-light uppercase opacity-70">The God of Destruction</p>
-        <div class="mt-12 flex gap-4">
-            <a href="#portfolio" class="px-8 py-3 bg-white text-black font-bold tracking-widest hover:bg-orange-600 hover:text-white transition uppercase">Portfolio</a>
-            <a href="https://www.youtube.com/@sakbindass9194/videos" target="_blank" class="yt-btn tracking-widest uppercase">YouTube</a>
+    <section class="hero-bg flex flex-col justify-center items-center text-center px-4 relative">
+        <div class="absolute top-8 left-8 text-left">
+            <h2 class="text-xl font-bold tracking-widest uppercase text-zinc-400">Sak Bindass Pvt Ltd</h2>
         </div>
-    </header>
+        <h1 class="text-6xl md:text-9xl font-black glow-text text-white tracking-tighter uppercase">VEERABHADRA</h1>
+        <p class="text-lg md:text-2xl mt-6 tracking-[0.5em] font-light uppercase text-orange-500">The God of Destruction</p>
+        <div class="mt-12">
+            <a href="#about" class="px-8 py-3 border border-orange-600 text-orange-500 hover:bg-orange-600 hover:text-white transition uppercase tracking-widest text-sm font-bold">Discover Our World</a>
+        </div>
+    </section>
 
-    <!-- AAA GAME SECTION (GAM prefix files) -->
-    <section id="game" class="py-24 px-6 max-w-7xl mx-auto border-t border-zinc-900">
-        <h2 class="section-title">AAA Game Development</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div>
-                <p class="text-2xl text-zinc-400 font-light leading-relaxed mb-6">
-                    Sak Bindass Pvt Ltd bharat ke sabse bade 'Mythological Thriller' par kaam kar raha hai. Unreal Engine 5.5 ki taqat se hum <span class="text-white font-bold">Veerabhadra</span> ko ek global AAA anubhav bana rahe hain.
+    <section id="about" class="py-24 px-6 max-w-6xl mx-auto text-center border-b border-zinc-900">
+        <h2 class="text-4xl font-black mb-8 uppercase tracking-widest text-white">We Are Sak Bindass</h2>
+        <p class="text-xl md:text-2xl font-light leading-relaxed text-zinc-400 max-w-4xl mx-auto">
+            हम सिर्फ कहानियाँ नहीं कहते, हम दुनिया बनाते हैं। <span class="text-white font-bold">Sak Bindass Pvt Ltd</span> एक प्रीमियम डिजिटल प्रोडक्शन हाउस है। हमारा मिशन भारतीय पौराणिक कथाओं (Mythology) की गहराई और रौद्र रूप को हॉलीवुड के स्तर और नेक्स्ट-जेनरेशन गेमिंग के जरिए पूरी दुनिया के सामने लाना है।
+        </p>
+    </section>
+
+    <section class="py-24 px-6 max-w-7xl mx-auto">
+        <h2 class="section-title">Our Expertise</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            
+            <div class="card p-10 glow-box">
+                <div class="text-orange-600 mb-6">
+                    <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                </div>
+                <h3 class="text-3xl font-black text-white mb-4 uppercase">AAA Level Gaming</h3>
+                <p class="text-zinc-400 leading-relaxed text-lg mb-6">
+                    हम Unreal Engine 5.5 की असीमित शक्ति का उपयोग करके एक्शन-एडवेंचर और थ्रिलर गेम्स डेवलप कर रहे हैं। <span class="text-orange-500 font-bold">Project Veerabhadra</span> हमारा अपकमिंग मास्टरपीस है, जिसमें आपको Real-time Ray Tracing, हाइपर-रियलिस्टिक कॉम्बैट और रोंगटे खड़े कर देने वाला गेमप्ले मिलेगा।
                 </p>
-                <p class="text-orange-500 font-bold uppercase tracking-widest">[ Status: Work in Progress ]</p>
+                <span class="inline-block px-4 py-1 border border-zinc-700 text-xs text-zinc-500 uppercase tracking-widest">In Development</span>
             </div>
-            <div class="portfolio-card">
-                <img src="gamees.png" alt="Game Preview" class="w-full h-auto object-cover">
+
+            <div class="card p-10 glow-box">
+                <div class="text-orange-600 mb-6">
+                    <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z"></path></svg>
+                </div>
+                <h3 class="text-3xl font-black text-white mb-4 uppercase">Cinematic Filmmaking</h3>
+                <p class="text-zinc-400 leading-relaxed text-lg mb-6">
+                    सिनेमा अब सिर्फ कैमरों तक सीमित नहीं है। हम हाई-एंड AI (ComfyUI), कस्टम पाइपलाइन्स और RTX 6000 Ada GPU नोड्स का इस्तेमाल करके विजुअल इफेक्ट्स और सिनेमैटिक्स की नई परिभाषा लिख रहे हैं। डार्क, इंटेंस और मासी (Massy) विजुअल्स हमारी पहचान हैं।
+                </p>
+                <span class="inline-block px-4 py-1 border border-zinc-700 text-xs text-zinc-500 uppercase tracking-widest">Pre-Production</span>
             </div>
-        </div>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
-            <img src="gammmd.png" class="portfolio-card w-full h-48 object-cover">
-            <img src="gamee.png" class="portfolio-card w-full h-48 object-cover">
-            <img src="game.png" class="portfolio-card w-full h-48 object-cover">
-            <img src="gameV.png" class="portfolio-card w-full h-48 object-cover">
+
         </div>
     </section>
 
-    <!-- CINEMATIC PORTFOLIO (Hero & Comfy files) -->
-    <section id="portfolio" class="py-24 bg-zinc-950 px-6">
+    <section class="py-24 bg-black px-6 border-t border-zinc-900">
         <div class="max-w-7xl mx-auto">
-            <h2 class="section-title text-white">Cinematic Showcase</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="portfolio-card"><img src="hero as.png" class="w-full h-80 object-cover"></div>
-                <div class="portfolio-card"><img src="ComfyUI_00001_.png" class="w-full h-80 object-cover"></div>
-                <div class="portfolio-card"><img src="ComfyUI_00002_.png" class="w-full h-80 object-cover"></div>
-                <div class="portfolio-card"><img src="ComfyUI_00003_.png" class="w-full h-80 object-cover"></div>
-                <div class="portfolio-card"><img src="ComfyUI_00007_.png" class="w-full h-80 object-cover"></div>
-                <div class="portfolio-card"><img src="gamddd.png" class="w-full h-80 object-cover"></div>
+            <h2 class="section-title">Visual Showcase</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <img src="hero as.png" class="card w-full h-72 object-cover">
+                <img src="gamees.png" class="card w-full h-72 object-cover">
+                <img src="gammmd.png" class="card w-full h-72 object-cover">
+                <img src="ComfyUI_00001_.png" class="card w-full h-72 object-cover">
+                <img src="ComfyUI_00002_.png" class="card w-full h-72 object-cover">
+                <img src="gameV.png" class="card w-full h-72 object-cover">
             </div>
         </div>
     </section>
 
-    <!-- CONTACT & MD OFFICE -->
-    <section id="contact" class="py-24 bg-black px-6">
-        <div class="max-w-4xl mx-auto bg-zinc-900/30 p-12 rounded-[40px] border border-zinc-800 text-center">
-            <h3 class="text-4xl font-black mb-8 uppercase tracking-tighter">MD's OFFICE</h3>
+    <footer class="py-24 bg-[#050505] border-t border-orange-900/30 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h3 class="text-4xl font-black mb-10 tracking-widest uppercase text-white">Connect With The Studio</h3>
             
-            <div class="flex flex-col md:flex-row justify-around gap-12 mb-12 text-left">
-                <div>
-                    <h4 class="text-orange-600 font-bold uppercase text-xs tracking-widest mb-2">Corporate ID</h4>
-                    <p class="text-2xl font-light">md@sakbindass.tech</p>
-                </div>
-                <div>
-                    <h4 class="text-orange-600 font-bold uppercase text-xs tracking-widest mb-2">Operations</h4>
-                    <p class="text-2xl font-light">info@sakbindass.tech</p>
-                </div>
+            <div class="mb-12">
+                <p class="text-orange-600 font-bold uppercase text-xs tracking-widest mb-3">Official Enquiries & Collaborations</p>
+                <a href="mailto:info@sakbindass.tech" class="text-3xl md:text-4xl font-light tracking-tight hover:text-orange-500 transition">info@sakbindass.tech</a>
             </div>
 
-            <div class="border-t border-zinc-800 pt-10">
-                <p class="mb-6 text-zinc-500 uppercase tracking-widest text-sm font-bold">Official Production Channel</p>
-                <a href="https://www.youtube.com/@sakbindass9194/videos" target="_blank" class="yt-btn px-12 py-4 inline-block text-xl">SUBSCRIBE TO SAK BINDASS</a>
+            <div class="flex flex-col items-center gap-6">
+                <a href="https://www.youtube.com/@sakbindass9194/videos" target="_blank" class="bg-red-600 text-white px-12 py-4 rounded-full font-black uppercase text-sm hover:bg-red-700 hover:scale-105 transition duration-300">Subscribe on YouTube</a>
+                <p class="text-zinc-600 italic text-sm mt-6 font-bold">"It’s Samrat The Great, Baby!"</p>
             </div>
             
-            <p class="mt-12 text-zinc-700 italic text-sm">"It’s Samrat The Great, Baby!"</p>
+            <p class="mt-16 text-zinc-800 text-[11px] uppercase tracking-widest font-bold">© 2026 Sak Bindass Pvt Ltd. Forging the Future of Indian Digital Arts.</p>
         </div>
-    </section>
-
-    <footer class="py-10 text-center text-zinc-800 text-xs uppercase tracking-widest">
-        © 2026 Sak Bindass Pvt Ltd. Global Cinematic Standards.
     </footer>
 
 </body>

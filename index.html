@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="hi">
 <head>
     <meta charset="UTF-8">
@@ -11,7 +11,7 @@
         .glow-text { text-shadow: 0 0 30px rgba(255, 69, 0, 0.8); }
         .hero-video-container { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; overflow: hidden; }
         .hero-video-container iframe { width: 100vw; height: 56.25vw; min-height: 100vh; min-width: 177.77vh; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); pointer-events: none; }
-        .overlay { background: linear-gradient(to bottom, rgba(0,0,0,0.3), #030303); position: absolute; inset: 0; z-index: 1; }
+        .overlay { background: linear-gradient(to bottom, rgba(0,0,0,0.4), #030303); position: absolute; inset: 0; z-index: 1; }
         .content-card { background: #0a0a0a; border: 1px solid #1a1a1a; transition: all 0.4s ease; }
         .content-card:hover { border-color: #ff4500; transform: translateY(-5px); }
         .orange-glow { box-shadow: 0 0 40px rgba(255, 69, 0, 0.15); }
@@ -19,10 +19,9 @@
 </head>
 <body>
 
-    <!-- HERO SECTION WITH CINEMATIC VIDEO -->
     <section class="relative h-screen flex items-center justify-center overflow-hidden">
         <div class="hero-video-container">
-            <iframe src="https://www.youtube.com/embed/FjvWEmaUJOc?autoplay=1&mute=1&loop=1&playlist=FjvWEmaUJOc&controls=0&showinfo=0&rel=0" frameborder="0" allow="autoplay; encrypted-media"></iframe>
+            <iframe src="https://www.youtube.com/embed/FjvWEmaUJOc?autoplay=1&mute=1&loop=1&playlist=FjvWEmaUJOc&controls=0&showinfo=0&rel=0&modestbranding=1" frameborder="0" allow="autoplay; encrypted-media"></iframe>
         </div>
         <div class="overlay"></div>
         
@@ -39,12 +38,10 @@
         </div>
     </section>
 
-    <!-- LEGACY & GAMING SECTION -->
     <section class="py-32 px-6 bg-[#030303] relative border-t border-zinc-900">
         <div class="max-w-6xl mx-auto">
             <div class="grid md:grid-cols-2 gap-16 items-start">
                 
-                <!-- CGI Legacy -->
                 <div class="content-card p-10 rounded-2xl">
                     <div class="w-12 h-1 bg-orange-600 mb-6"></div>
                     <h2 class="text-3xl font-black mb-6 text-white uppercase italic tracking-tight">Our CGI Legacy</h2>
@@ -54,7 +51,6 @@
                     <p class="text-zinc-500 text-sm italic border-l-2 border-zinc-800 pl-4">Years of expertise in Procedural FX & Advanced Digital Artistry.</p>
                 </div>
 
-                <!-- Gaming Future -->
                 <div class="content-card p-10 rounded-2xl orange-glow">
                     <div class="w-12 h-1 bg-white mb-6"></div>
                     <h2 class="text-3xl font-black mb-6 text-white uppercase italic tracking-tight">Gaming Revolution</h2>
@@ -74,25 +70,21 @@
         </div>
     </section>
 
-    <!-- TECH STACK LOGOS (Visual placeholders) -->
     <section class="py-16 bg-black">
         <div class="max-w-6xl mx-auto px-6 text-center">
-            <p class="text-zinc-600 font-bold text-xs tracking-[0.5em] uppercase mb-8">Powered By Industry Giants</p>
             <div class="flex flex-wrap justify-center gap-10 opacity-30 grayscale hover:grayscale-0 transition-all duration-700">
-                <span class="text-xl font-bold text-white uppercase italic">Houdini</span>
-                <span class="text-xl font-bold text-white uppercase italic">Unreal Engine 5</span>
-                <span class="text-xl font-bold text-white uppercase italic">Maya</span>
-                <span class="text-xl font-bold text-white uppercase italic">NVIDIA H100</span>
-                <span class="text-xl font-bold text-white uppercase italic">Blender</span>
+                <span class="text-xl font-bold text-white uppercase italic tracking-widest">Houdini</span>
+                <span class="text-xl font-bold text-white uppercase italic tracking-widest">Unreal Engine 5</span>
+                <span class="text-xl font-bold text-white uppercase italic tracking-widest">Maya</span>
+                <span class="text-xl font-bold text-white uppercase italic tracking-widest">NVIDIA H100</span>
+                <span class="text-xl font-bold text-white uppercase italic tracking-widest">Blender</span>
             </div>
         </div>
     </section>
 
-    <!-- FOOTER -->
     <footer class="py-20 bg-black border-t border-zinc-900 px-6">
         <div class="max-w-4xl mx-auto text-center">
             <h3 class="text-2xl font-black mb-8 tracking-widest uppercase text-orange-600">SAK BINDASS PRIVATE LIMITED</h3>
-            <p class="text-zinc-500 mb-10 font-light max-w-lg mx-auto">India's premier AI-Native Cinematic & AAA Game Development Studio.</p>
             <div class="flex flex-col items-center gap-2">
                 <p class="text-zinc-400 text-sm">Official Inquiries</p>
                 <a href="mailto:md@sakbindass.tech" class="text-2xl font-light hover:text-orange-500 transition border-b border-zinc-800 pb-1">md@sakbindass.tech</a>

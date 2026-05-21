@@ -1,99 +1,103 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="hi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sak Bindass Pvt Ltd | AAA Game & Cinematic Studio</title>
+    <title>Sak Bindass Pvt Ltd | Next-Gen CGI & Gaming Studio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { background-color: #030303; color: #e5e5e5; font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
-        /* Hero Section with Parallax Feel */
-        .hero-bg { background: linear-gradient(to bottom, rgba(0,0,0,0.5), #030303), url('hero.png'); background-size: cover; background-position: center; background-attachment: fixed; height: 100vh; }
-        .glow-text { text-shadow: 0 0 40px rgba(255, 69, 0, 1); }
-        .glow-box { box-shadow: 0 0 20px rgba(255, 69, 0, 0.1); }
-        .card { background: #0a0a0a; border: 1px solid #1f1f1f; transition: all 0.4s ease; border-radius: 12px; }
-        .card:hover { border-color: #ff4500; transform: translateY(-8px); box-shadow: 0 10px 30px rgba(255, 69, 0, 0.15); }
-        .section-title { font-size: 2.5rem; font-weight: 900; text-transform: uppercase; letter-spacing: 0.1em; border-left: 6px solid #ff4500; padding-left: 1rem; margin-bottom: 2rem; color: #ffffff; }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap');
+        body { background-color: #030303; color: #e5e5e5; font-family: 'Inter', sans-serif; scroll-behavior: smooth; margin: 0; }
+        .glow-text { text-shadow: 0 0 30px rgba(255, 69, 0, 0.8); }
+        .hero-video-container { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; overflow: hidden; }
+        .hero-video-container iframe { width: 100vw; height: 56.25vw; min-height: 100vh; min-width: 177.77vh; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); pointer-events: none; }
+        .overlay { background: linear-gradient(to bottom, rgba(0,0,0,0.3), #030303); position: absolute; inset: 0; z-index: 1; }
+        .content-card { background: #0a0a0a; border: 1px solid #1a1a1a; transition: all 0.4s ease; }
+        .content-card:hover { border-color: #ff4500; transform: translateY(-5px); }
+        .orange-glow { box-shadow: 0 0 40px rgba(255, 69, 0, 0.15); }
     </style>
 </head>
 <body>
 
-    <section class="hero-bg flex flex-col justify-center items-center text-center px-4 relative">
-        <div class="absolute top-8 left-8 text-left">
-            <h2 class="text-xl font-bold tracking-widest uppercase text-zinc-400">Sak Bindass Pvt Ltd</h2>
+    <!-- HERO SECTION WITH CINEMATIC VIDEO -->
+    <section class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="hero-video-container">
+            <iframe src="https://www.youtube.com/embed/FjvWEmaUJOc?autoplay=1&mute=1&loop=1&playlist=FjvWEmaUJOc&controls=0&showinfo=0&rel=0" frameborder="0" allow="autoplay; encrypted-media"></iframe>
         </div>
-        <h1 class="text-6xl md:text-9xl font-black glow-text text-white tracking-tighter uppercase">VEERABHADRA</h1>
-        <p class="text-lg md:text-2xl mt-6 tracking-[0.5em] font-light uppercase text-orange-500">The God of Destruction</p>
-        <div class="mt-12">
-            <a href="#about" class="px-8 py-3 border border-orange-600 text-orange-500 hover:bg-orange-600 hover:text-white transition uppercase tracking-widest text-sm font-bold">Discover Our World</a>
+        <div class="overlay"></div>
+        
+        <div class="relative z-10 text-center px-6">
+            <p class="text-orange-500 font-bold tracking-[0.3em] uppercase mb-4 text-sm md:text-base">Experience the Future of Indian Cinema</p>
+            <h1 class="text-6xl md:text-9xl font-black tracking-tighter mb-6 glow-text uppercase italic">
+                SAK BINDASS
+            </h1>
+            <div class="flex flex-col md:flex-row items-center justify-center gap-4 mt-8">
+                <a href="https://www.youtube.com/watch?v=FjvWEmaUJOc" target="_blank" class="bg-orange-600 hover:bg-orange-700 text-white px-12 py-4 rounded-full font-black transition-all hover:scale-105 uppercase tracking-widest text-sm shadow-lg shadow-orange-900/40">
+                    Watch 'Meluha' Cinematic Reel
+                </a>
+            </div>
         </div>
     </section>
 
-    <section id="about" class="py-24 px-6 max-w-6xl mx-auto text-center border-b border-zinc-900">
-        <h2 class="text-4xl font-black mb-8 uppercase tracking-widest text-white">We Are Sak Bindass</h2>
-        <p class="text-xl md:text-2xl font-light leading-relaxed text-zinc-400 max-w-4xl mx-auto">
-            हम सिर्फ कहानियाँ नहीं कहते, हम दुनिया बनाते हैं। <span class="text-white font-bold">Sak Bindass Pvt Ltd</span> एक प्रीमियम डिजिटल प्रोडक्शन हाउस है। हमारा मिशन भारतीय पौराणिक कथाओं (Mythology) की गहराई और रौद्र रूप को हॉलीवुड के स्तर और नेक्स्ट-जेनरेशन गेमिंग के जरिए पूरी दुनिया के सामने लाना है।
-        </p>
-    </section>
-
-    <section class="py-24 px-6 max-w-7xl mx-auto">
-        <h2 class="section-title">Our Expertise</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-            
-            <div class="card p-10 glow-box">
-                <div class="text-orange-600 mb-6">
-                    <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+    <!-- LEGACY & GAMING SECTION -->
+    <section class="py-32 px-6 bg-[#030303] relative border-t border-zinc-900">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-16 items-start">
+                
+                <!-- CGI Legacy -->
+                <div class="content-card p-10 rounded-2xl">
+                    <div class="w-12 h-1 bg-orange-600 mb-6"></div>
+                    <h2 class="text-3xl font-black mb-6 text-white uppercase italic tracking-tight">Our CGI Legacy</h2>
+                    <p class="text-zinc-400 text-lg leading-relaxed mb-6 font-light">
+                        Humne saalon tak <span class="text-white font-bold">High-End CGI, Houdini Simulations, aur Maya Rigging</span> par kaam kiya hai. 'Meluha' jaise projects hamari technical mastery ka ek chhota sa hissa hain. Hamara experience sirf kahaniyon tak seemit nahi hai, hum un worlds ko build karte hain jo screen par jaan phoonk dete hain.
+                    </p>
+                    <p class="text-zinc-500 text-sm italic border-l-2 border-zinc-800 pl-4">Years of expertise in Procedural FX & Advanced Digital Artistry.</p>
                 </div>
-                <h3 class="text-3xl font-black text-white mb-4 uppercase">AAA Level Gaming</h3>
-                <p class="text-zinc-400 leading-relaxed text-lg mb-6">
-                    हम Unreal Engine 5.5 की असीमित शक्ति का उपयोग करके एक्शन-एडवेंचर और थ्रिलर गेम्स डेवलप कर रहे हैं। <span class="text-orange-500 font-bold">Project Veerabhadra</span> हमारा अपकमिंग मास्टरपीस है, जिसमें आपको Real-time Ray Tracing, हाइपर-रियलिस्टिक कॉम्बैट और रोंगटे खड़े कर देने वाला गेमप्ले मिलेगा।
-                </p>
-                <span class="inline-block px-4 py-1 border border-zinc-700 text-xs text-zinc-500 uppercase tracking-widest">In Development</span>
-            </div>
 
-            <div class="card p-10 glow-box">
-                <div class="text-orange-600 mb-6">
-                    <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z"></path></svg>
+                <!-- Gaming Future -->
+                <div class="content-card p-10 rounded-2xl orange-glow">
+                    <div class="w-12 h-1 bg-white mb-6"></div>
+                    <h2 class="text-3xl font-black mb-6 text-white uppercase italic tracking-tight">Gaming Revolution</h2>
+                    <p class="text-zinc-400 text-lg leading-relaxed mb-8 font-light">
+                        Ab hum apni poori takat <span class="text-orange-500 font-bold">AAA Gaming</span> mein jhonk rahe hain. Unreal Engine 5 aur NVIDIA H100 ki power se hum India ka sabse bhavya gaming experience taiyar kar rahe hain.
+                    </p>
+                    <div class="bg-zinc-900/50 p-6 rounded-xl border border-orange-900/30">
+                        <p class="text-xs text-orange-600 font-black tracking-widest uppercase mb-2">Upcoming Reveal</p>
+                        <div class="flex items-baseline gap-2">
+                            <span class="text-4xl font-black text-white italic">JUNE 2026</span>
+                            <span class="text-zinc-500 font-bold uppercase text-xs tracking-tighter">Official Game Launch Phase</span>
+                        </div>
+                    </div>
                 </div>
-                <h3 class="text-3xl font-black text-white mb-4 uppercase">Cinematic Filmmaking</h3>
-                <p class="text-zinc-400 leading-relaxed text-lg mb-6">
-                    सिनेमा अब सिर्फ कैमरों तक सीमित नहीं है। हम हाई-एंड AI (ComfyUI), कस्टम पाइपलाइन्स और RTX 6000 Ada GPU नोड्स का इस्तेमाल करके विजुअल इफेक्ट्स और सिनेमैटिक्स की नई परिभाषा लिख रहे हैं। डार्क, इंटेंस और मासी (Massy) विजुअल्स हमारी पहचान हैं।
-                </p>
-                <span class="inline-block px-4 py-1 border border-zinc-700 text-xs text-zinc-500 uppercase tracking-widest">Pre-Production</span>
-            </div>
 
-        </div>
-    </section>
-
-    <section class="py-24 bg-black px-6 border-t border-zinc-900">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="section-title">Visual Showcase</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <img src="hero as.png" class="card w-full h-72 object-cover">
-                <img src="gamees.png" class="card w-full h-72 object-cover">
-                <img src="gammmd.png" class="card w-full h-72 object-cover">
-                <img src="ComfyUI_00001_.png" class="card w-full h-72 object-cover">
-                <img src="ComfyUI_00002_.png" class="card w-full h-72 object-cover">
-                <img src="gameV.png" class="card w-full h-72 object-cover">
             </div>
         </div>
     </section>
 
-    <footer class="py-24 bg-[#050505] border-t border-orange-900/30 px-6">
+    <!-- TECH STACK LOGOS (Visual placeholders) -->
+    <section class="py-16 bg-black">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <p class="text-zinc-600 font-bold text-xs tracking-[0.5em] uppercase mb-8">Powered By Industry Giants</p>
+            <div class="flex flex-wrap justify-center gap-10 opacity-30 grayscale hover:grayscale-0 transition-all duration-700">
+                <span class="text-xl font-bold text-white uppercase italic">Houdini</span>
+                <span class="text-xl font-bold text-white uppercase italic">Unreal Engine 5</span>
+                <span class="text-xl font-bold text-white uppercase italic">Maya</span>
+                <span class="text-xl font-bold text-white uppercase italic">NVIDIA H100</span>
+                <span class="text-xl font-bold text-white uppercase italic">Blender</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-20 bg-black border-t border-zinc-900 px-6">
         <div class="max-w-4xl mx-auto text-center">
-            <h3 class="text-4xl font-black mb-10 tracking-widest uppercase text-white">Connect With The Studio</h3>
-            
-            <div class="mb-12">
-                <p class="text-orange-600 font-bold uppercase text-xs tracking-widest mb-3">Official Enquiries & Collaborations</p>
-                <a href="mailto:info@sakbindass.tech" class="text-3xl md:text-4xl font-light tracking-tight hover:text-orange-500 transition">info@sakbindass.tech</a>
+            <h3 class="text-2xl font-black mb-8 tracking-widest uppercase text-orange-600">SAK BINDASS PRIVATE LIMITED</h3>
+            <p class="text-zinc-500 mb-10 font-light max-w-lg mx-auto">India's premier AI-Native Cinematic & AAA Game Development Studio.</p>
+            <div class="flex flex-col items-center gap-2">
+                <p class="text-zinc-400 text-sm">Official Inquiries</p>
+                <a href="mailto:md@sakbindass.tech" class="text-2xl font-light hover:text-orange-500 transition border-b border-zinc-800 pb-1">md@sakbindass.tech</a>
             </div>
-
-            <div class="flex flex-col items-center gap-6">
-                <a href="https://www.youtube.com/watch?v=FjvWEmaUJOc" target="_blank" class="bg-red-600 text-white px-12 py-4 rounded-full font-black uppercase text-sm hover:bg-red-700 hover:scale-105 transition duration-300">Subscribe on YouTube</a>
-                <p class="text-zinc-600 italic text-sm mt-6 font-bold">"We aren't just telling stories; we are building the worlds they live in. India's first AAA leap into the global future"</p>
-            </div>
-            
-            <p class="mt-16 text-orange-600 text-[11px] uppercase tracking-widest font-bold">© 2026 Sak Bindass Pvt Ltd. Forging the Future of Indian Digital Arts.</p>
+            <p class="text-zinc-800 text-[10px] mt-16 tracking-widest uppercase font-bold">&copy; 2026 SAK Bindass Pvt Ltd. All Rights Reserved.</p>
         </div>
     </footer>
 

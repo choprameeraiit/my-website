@@ -55,6 +55,28 @@
         /* Tech Stack Badges Glow */
         .stack-badge { transition: all 0.3s ease; }
         .stack-badge:hover { box-shadow: 0 0 20px rgba(255,69,0,0.4); border-color: #ff4500; transform: translateY(-3px); }
+
+        /* 🔥 NVIDIA GLOWING NEON BADGE 🔥 */
+        @keyframes nvidiaPulse {
+            0% { box-shadow: 0 0 10px rgba(118, 185, 0, 0.4), inset 0 0 5px rgba(118, 185, 0, 0.2); }
+            50% { box-shadow: 0 0 25px rgba(118, 185, 0, 0.9), inset 0 0 10px rgba(118, 185, 0, 0.5); border-color: #9cff00; }
+            100% { box-shadow: 0 0 10px rgba(118, 185, 0, 0.4), inset 0 0 5px rgba(118, 185, 0, 0.2); }
+        }
+        .nvidia-neon-badge {
+            background: rgba(118, 185, 0, 0.1);
+            border: 1px solid #76b900;
+            color: #8ce600;
+            padding: 6px 14px;
+            border-radius: 6px;
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 900;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            text-shadow: 0 0 8px rgba(118, 185, 0, 0.8);
+            margin-top: 12px;
+            animation: nvidiaPulse 2s infinite ease-in-out;
+        }
     </style>
     <script>
         function handleContact(e) {
@@ -244,8 +266,9 @@
                         <img src="gaurav.jpg" alt="Gaurav Kulshrestha" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
                         <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-90"></div>
                         <div class="absolute bottom-6 left-0 right-0 px-6">
-                            <h3 class="text-3xl font-black text-white uppercase italic tracking-tighter">Gaurav Kulshrestha</h3>
+                            <h3 class="text-3xl font-black text-white uppercase italic tracking-tighter">Gaurav (Samrat) Kulshrestha</h3>
                             <p class="text-orange-500 font-bold tracking-widest uppercase text-xs mt-1">Founder & Managing Director</p>
+                            <div class="nvidia-neon-badge">NVIDIA Registered Business Executive</div>
                         </div>
                     </div>
                     <div class="p-8 text-left">
@@ -264,6 +287,7 @@
                         <div class="absolute bottom-6 left-0 right-0 px-6">
                             <h3 class="text-3xl font-black text-white uppercase italic tracking-tighter">Arpit Kulshrestha</h3>
                             <p class="text-orange-500 font-bold tracking-widest uppercase text-xs mt-1">Co-Founder & Technical Lead</p>
+                            <div class="nvidia-neon-badge">NVIDIA Registered Developer</div>
                         </div>
                     </div>
                     <div class="p-8 text-left">
@@ -314,8 +338,10 @@
     </section>
 
     <footer class="py-16 text-center border-t border-zinc-900 bg-[#030303]">
-        <p class="text-orange-600 font-bold uppercase text-sm tracking-widest mb-1">© SAK BINDASS PRIVATE LIMITED</p>
-        <p class="text-zinc-600 font-medium uppercase text-[10px] tracking-widest">All rights reserved.</p>
+        <p class="text-orange-600 font-black uppercase text-sm tracking-[0.2em] mb-2">
+            © SAK BINDASS PRIVATE LIMITED <span class="text-zinc-600 mx-3">|</span> <span class="text-zinc-300 drop-shadow-[0_0_10px_rgba(255,255,255,0.3)]">ARCHITECTING THE FUTURE</span>
+        </p>
+        <p class="text-zinc-600 font-bold uppercase text-[10px] tracking-widest">
+            All rights reserved. <span class="text-red-500/70">AI-Powered Cinematic Legacy.</span>
+        </p>
     </footer>
-</body>
-</html>
